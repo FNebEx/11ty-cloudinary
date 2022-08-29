@@ -5,7 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: _src
+  path: "./_src/_includes"
+  label: Includes
+  create: all
+  match: "**/*"
+- type: directory
+  path: "./_src"
   label: SRC
   create: all
   match: "**/*"
