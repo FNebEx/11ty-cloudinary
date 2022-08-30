@@ -9,13 +9,13 @@ sections:
   label: Includes
   create: all
   match: "**/*"
-  new_doc_ext: ".liquid"
+  new_doc_ext: liquid
 - type: directory
   path: _data
   label: Data
   create: all
   match: "**/*"
-  new_doc_ext: ".js"
+  new_doc_ext: ''
 - type: directory
   path: blog
   label: Blog
