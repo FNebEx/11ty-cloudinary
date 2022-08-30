@@ -3,3 +3,10 @@ layout: default.liquid
 ---
 
 <h1>11ty</h1>
+<code>
+  npx install @11ty/eleventy
+</code>
+
+{% for user in users %}
+  <p>{{ user }}</p>
+{% endfor %}
