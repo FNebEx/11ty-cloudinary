@@ -13,7 +13,7 @@ sections:
 - type: directory
   path: _data
   label: Data
-  create: all
+  create: documents
   match: "**/*"
   new_doc_ext: app
 - type: directory
@@ -23,13 +23,14 @@ sections:
   match: "**/*"
   new_doc_ext: md
 upload_dir: ''
-public_path: ''
-front_matter_path: ''
-use_front_matter_path: 
+public_path: https://res.cloudinary.com/dypy0397h/image/upload
+front_matter_path: https://res.cloudinary.com/dypy0397h/image/upload
+use_front_matter_path: true
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_output_directory: _site
+  install_dependencies_command: npx install @11ty/eleventy
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: eleventy
